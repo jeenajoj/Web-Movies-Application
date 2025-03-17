@@ -1,0 +1,101 @@
+/* 🎞️ Movie Grid Layout - Side by Side */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ensures responsive 3-column layout */
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: stretch; /* Ensure equal height for all cards */
+}
+
+/* 🎬 Movie Card */
+.movie-card {
+  background: #141313;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+  max-width: 300px; /* Ensure proper width */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+/* 🖼️ Movie Image */
+.movie-card img {
+  width: 100%;
+  height: 400px; /* Keep images uniform */
+  object-fit: cover;
+}
+
+/* 🎞️ Card Title */
+.movie-card mat-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  background: #090909; /* Dark background for title */
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+/* 🎬 Elegant Description Styling */
+.action-description {
+  max-width: 75%; /* Keeps it nicely aligned */
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #1b1b19; /* Sexy golden yellow */
+  text-shadow: 0px 0px 15px rgba(255, 204, 0, 0.6); /* Neon glow effect */
+  line-height: 1;
+  margin: 20px auto;
+  letter-spacing: 1px;
+}
+
+/* ✨ Highlight Key Text */
+.action-description strong {
+  color: #ffffff; /* White for emphasis */
+  font-weight: bold;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .action-description {
+      font-size: 18px;
+      padding: 15px;
+      max-width: 90%;
+  }
+}
+/* 🌟 Style for Main Titles */
+h1 {
+  font-size: 50px; /* Large and eye-catching */
+  font-weight: bold;
+  color: #ffcc00; /* Golden color for a cinematic feel */
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* 🎬 Style for Subtitles */
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff; /* White for contrast */
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(141, 54, 54, 0.5);
+}

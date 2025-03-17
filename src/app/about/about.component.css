@@ -1,0 +1,32 @@
+.about-card {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.85); /* Dark Glass Effect */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(129, 100, 100, 0.2);
+    margin-top: 80px; /* Ensure it does not touch the header */
+}
+.about-card mat-card-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffcc00; /* Golden Highlight */
+}
+
+/* 🌟 About Card Content */
+.about-card mat-card-content {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ✨ Mobile Responsive */
+@media (max-width: 768px) {
+    .header-container {
+        font-size: 22px;
+    }
+    .about-card {
+        width: 95%;
+    }
+}

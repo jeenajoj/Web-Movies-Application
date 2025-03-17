@@ -1,0 +1,20 @@
+<h1>ACTION</h1>
+<h2>LORD OF RINGS</h2>
+<div class="action-container">
+  <!-- 🎬 Action Movies Title -->
+ 
+
+  <!-- 📜 Description -->
+  <p class="action-description">{{ action.description }}</p>
+
+  <!-- 🎥 Movie Cards Grid -->
+  <div class="movie-grid">
+      <mat-card class="movie-card" *ngFor="let movie of action.movies">
+          <img mat-card-image [src]="movie.posterUrl" [alt]="movie.title">
+          <mat-card-content>
+              <mat-card-title>{{ movie.title }}</mat-card-title>
+              <mat-card-subtitle>{{ movie.description }}</mat-card-subtitle>
+          </mat-card-content>
+      </mat-card>
+  </div>
+</div>
